@@ -19,4 +19,24 @@
         android:singleLine="true"
         android:ellipsize="start"
 
+        android:text="Teste"/>
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:gravity="end"
+            android:layout_marginEnd="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+
+
+            android:text="Teste"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="odp"
+    
 </LinearLayout>
