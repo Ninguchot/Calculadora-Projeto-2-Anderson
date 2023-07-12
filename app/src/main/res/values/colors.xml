@@ -4,6 +4,15 @@
     <color name="white">#ffffff</color>
     <color name="blue">#2196F3</color>
 
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/material_dynamic_primary0</item>
+        <item name="colorPrimaryDark">@color/white</item>
+
+
+
+
+    </style>
+
     <style name="Operators_Button">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -29,7 +38,4 @@
         <item name="android:layout_margin">0.5dp</item>
 
     </style>
-
-
-
 </resources>
