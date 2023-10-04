@@ -42,6 +42,16 @@
             android:text="C"/>
 
         <TextView
+            android:id="@+id/parenteseAbrindo"
+            style="@style/Operators_Button"
+            android:text="("/>
+
+        <TextView
+            android:id="@+id/parenteseFechando"
+            style="@style/Operators_Button"
+            android:text=")"/>
+
+        <TextView
             android:id="@+id/divisao"
             style="@style/Operators_Button"
             android:text="/"/>
@@ -72,7 +82,7 @@
         <TextView
             android:id="@+id/multiplicacao"
             style="@style/Operators_Button"
-            android:text="x"/>
+            android:text="*"/>
 
     </LinearLayout>
 

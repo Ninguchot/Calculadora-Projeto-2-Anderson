@@ -6,6 +6,7 @@ import android.renderscript.ScriptGroup.Binding
 import android.widget.Button
 import android.widget.TextView
 import com.calculadora.ninguchot.databinding.ActivityMainBinding
+import org.mariuszgromada.math.mxparser.Expression
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             calculo.text = "${calculo.text}/"
         }
         binding.multiplicacao.setOnClickListener {
-            calculo.text = "${calculo.text}X"
+            calculo.text = "${calculo.text}*"
         }
         binding.subtracao.setOnClickListener {
             calculo.text = "${calculo.text}-"
@@ -62,21 +63,27 @@ class MainActivity : AppCompatActivity() {
         binding.ponto.setOnClickListener {
             calculo.text = "${calculo.text}."
         }
+        binding.parenteseAbrindo.setOnClickListener {
+            calculo.text = "${calculo.text}("
+        }
+        binding.parenteseFechando.setOnClickListener {
+            calculo.text = "${calculo.text})"
+        }
         binding.backspace.setOnClickListener {
             calculo.text = calculo.text.dropLast(1)
         }
         binding.limpar.setOnClickListener {
             calculo.text = ""
+            binding.resultado.text = ""
         }
-
         binding.igual.setOnClickListener {
+            val resultadoCalculado = Expression(calculo.text.toString()).calculate()
 
+            if (resultadoCalculado.isNaN()){
+                binding.resultado.text = "Expressão Inválida"
+            }else{
+                binding.resultado.text = resultadoCalculado.toString()
+            }
         }
-
-
-
-
-
-
     }
 }
