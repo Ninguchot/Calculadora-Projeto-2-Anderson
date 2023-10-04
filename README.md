@@ -11,5 +11,6 @@ Video 2 https://www.youtube.com/watch?v=bBIKE6Te08I&t=8s
 Fonte
 Ivan Rodrigues
 Video 3 https://www.youtube.com/watch?v=qFZ0RYU7grU&list=PLl223bYTf3guyxeD15YiAAIq9SROYPrpA&index=2
+Fonte independencia: https://mvnrepository.com/artifact/org.mariuszgromada.math/MathParser.org-mXparser/5.2.1
 
 Video 3 subistitui o video 2.
