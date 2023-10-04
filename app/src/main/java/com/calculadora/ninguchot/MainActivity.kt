@@ -2,28 +2,50 @@ package com.calculadora.ninguchot
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.renderscript.ScriptGroup.Binding
+import android.widget.Button
+import android.widget.TextView
+import com.calculadora.ninguchot.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        supportActionBar!!.hide()
+        val calculo = binding.calculo
 
-    }
-        fun AcrescentearUmaExpressao(string: String, limpar_dados : Boolean){
-
-            if (resultado.text.isNotEmpty()){
-                expressao.text = " "
-            }
-
-            if (limpar_dados){
-                resultado.text = " "
-                expressao.append(String)
-            }else{
-                expressao.append(resultado.text)
-                expressao.append(string)
-                resultado.text = " "
-            }
+        binding.zero.setOnClickListener {
+            calculo.text = "${calculo.text}0"
         }
+        binding.um.setOnClickListener {
+            calculo.text = "${calculo.text}1"
+        }
+        binding.dois.setOnClickListener {
+            calculo.text = "${calculo.text}2"
+        }
+        binding.tres.setOnClickListener {
+            calculo.text = "${calculo.text}3"
+        }
+        binding.quatro.setOnClickListener {
+            calculo.text = "${calculo.text}4"
+        }
+        binding.cinco.setOnClickListener {
+            calculo.text = "${calculo.text}5"
+        }
+        binding.seis.setOnClickListener {
+            calculo.text = "${calculo.text}6"
+        }
+        binding.sete.setOnClickListener {
+            calculo.text = "${calculo.text}7"
+        }
+        binding.oito.setOnClickListener {
+            calculo.text = "${calculo.text}8"
+        }
+        binding.nove.setOnClickListener {
+            calculo.text = "${calculo.text}9"
+        }
+    }
 }

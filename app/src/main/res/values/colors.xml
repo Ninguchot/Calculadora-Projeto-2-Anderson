@@ -7,10 +7,6 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/material_dynamic_primary0</item>
         <item name="colorPrimaryDark">@color/white</item>
-
-
-
-
     </style>
 
     <style name="Operators_Button">
