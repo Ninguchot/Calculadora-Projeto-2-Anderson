@@ -47,5 +47,32 @@ class MainActivity : AppCompatActivity() {
         binding.nove.setOnClickListener {
             calculo.text = "${calculo.text}9"
         }
+        binding.divisao.setOnClickListener {
+            calculo.text = "${calculo.text}/"
+        }
+        binding.multiplicacao.setOnClickListener {
+            calculo.text = "${calculo.text}X"
+        }
+        binding.subtracao.setOnClickListener {
+            calculo.text = "${calculo.text}-"
+        }
+        binding.soma.setOnClickListener {
+            calculo.text = "${calculo.text}+"
+        }
+        binding.ponto.setOnClickListener {
+            calculo.text = "${calculo.text}."
+        }
+        binding.backspace.setOnClickListener {
+            calculo.text = calculo.text.dropLast(1)
+        }
+        binding.limpar.setOnClickListener {
+            calculo.text = ""
+        }
+
+
+
+
+
+
     }
 }
