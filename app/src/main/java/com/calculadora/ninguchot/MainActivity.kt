@@ -69,6 +69,10 @@ class MainActivity : AppCompatActivity() {
             calculo.text = ""
         }
 
+        binding.igual.setOnClickListener {
+
+        }
+
 
 
 
